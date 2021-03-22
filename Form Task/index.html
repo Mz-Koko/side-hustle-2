@@ -16,23 +16,43 @@
         <div class="form-page">
             <h2 class="create">Create Account</h2>
             <p class="text">It's free and hardly takes more than 30 seconds</p>
-            <form class="input-group">
-                <div class="icon"><i class="fas fa-user"></i></div>
+            <form class="input-group" method="POST">
+                <div class="icon-row">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" class="input-field" placeholder="Username" required></div>
+                <label class="error username hidden"></label>
+                <div class="icon-row">
+                    <i class="fas fa-paper-plane"></i>
+                    <input type="email" name="email" class="input-field" placeholder="Email Address" required>
+                </div>
+                <label class="error email hidden"></label>
 
-                <input type="text" class="input-field" placeholder="Username" required>
-                <i class="fas fa-paper-plane"></i>
-                <input type="text" class="input-field" placeholder="Email Address" required>
-                <i class="fas fa-lock"></i>
-                <input type="text" class="input-field" placeholder="Password" required>
-                <!-- <img src="images/passcode.svg"> -->
-                <input type="text" class="input-field" placeholder="Confirm Password" required>
-                <button type="submit" class="submit-btn">Sign Up</button>
+                <div class="icon-row">
+                    <i class="fas fa-lock"></i>
+                    <input type="text" autocomplete="off" name="password" class="mask password input-field" placeholder="Password" required>
+
+                    <i class="reveal fas fa-eye"></i>
+
+                </div>
+                <label class="error password hidden"></label>
+
+                <div class=" icon-row">
+                    <!-- <img src="images/passcode.svg"> -->
+
+                    <i class="fas fa-lock"></i><i class="fa fa-check"></i>
+                    <input type="text " autocomplete="off " name="password2" class="mask input-field" placeholder="Confirm Password" required>
+                </div>
+                <label class="error password2 hidden"></label>
+                <button type="button" class="submit-btn">Sign Up</button>
+                <p class="form-text ">By clicking the Sign Up button, you agree to our <a href="# ">Terms & Conditions</a>, and
+                    <a href="# ">Privacy Policy</a>.</p>
             </form>
-            <p class="form-text">By clicking the Sign Up button, you agree to our <span>Terms & Conditions</span>, and <span>Privacy Policy</span>.</p>
+
         </div>
     </div>
     </div>
-    <script src=" main.js ">
-    </script>
-    <script src="https://kit.fontawesome.com/fa5a5ec808.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src=" main.js"></script>
+
+    <script src="https://kit.fontawesome.com/fa5a5ec808.js" crossorigin="anonymous "></script>
 </body>
